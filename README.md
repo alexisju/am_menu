@@ -1,5 +1,5 @@
 
-## Un menu personnel pour Shaarli
+## Un plugin de menu personnel pour Shaarli
 
 Un plugin pour Shaarli (fork communautaire) qui ajoute un menu personnel
 
