@@ -13,7 +13,7 @@ The directory structure should look like:
         └── effingo_menu
             ├── README.md
             ├── effingo_menu.php
-            ├── effingo_menu.html
+            └── effingo_menu.html
             
 ```
 
