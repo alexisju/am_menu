@@ -21,5 +21,5 @@ To enable the plugin, add `'effingo_menu'` to your list of enabled plugins in `d
 . This should look like:
 
 ```
-$GLOBALS['config']['PLUGINS'] = array('qrcode', 'any_other_plugin', 'effingo_menu')
+$GLOBALS['config']['PLUGINS'] = array('qrcode', 'any_other_plugin', 'effingo_menu');
 ```
