@@ -1,8 +1,8 @@
 <?php
 /**
- * Effingo.be menu
+ * AlbinoMouse Menu
  *
- * Ajoute un menu personnalisé pour mon Shaarli
+ * Menu personalisable à utiliser avec le template AlbinoMouse pour Shaarli (https://github.com/alexisju/albinomouse-template)
  * 
  */
 
