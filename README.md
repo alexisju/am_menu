@@ -1,10 +1,15 @@
 
 ## Un plugin de menu personnel pour Shaarli
 
-Un plugin pour Shaarli (fork communautaire) qui ajoute un menu personalisable pour le template AlbinoMouse pour Shaarli (https://github.com/alexisju/albinomouse-template)
+AM Menu (Albinomouse Menu)  is a plugin designed to enhance and customize [Albinomouse template](https://github.com/alexisju/albinomouse-template)
+ for [Shaarli](https://github.com/shaarli/Shaarli).
 
-### Installation/configuration
-Clone this repository inside your `tpl/plugins/` directory, or download the archive and unpack it there.  
+### Installation
+
+  1. Download the latest [release](https://github.com/alexisju/am_menu) of this plugin.
+  2. Put the `am_menu` folder in your Shaarli installation, in `plugins/` (don't change the name).
+  3. Enable the plugin in Shaarli's plugin administration page. 
+  
 The directory structure should look like:
 
 ```
@@ -12,14 +17,19 @@ The directory structure should look like:
     └── plugins
         └── am_menu
             ├── README.md
-            ├── am_menu.php
-            └── am_menu.html
+            └──am_menu.php
             
 ```
+### Configuration
 
-To enable the plugin, add `'am_menu'` to your list of enabled plugins in `data/options.php` (`PLUGINS` array)
-. This should look like:
+You need to edit manually the file `am_menu.php` to change the itemps of the menu.
 
-```
-$GLOBALS['config']['PLUGINS'] = array('qrcode', 'any_other_plugin', 'am_menu');
-```
+Only change these elements :
+
+href => ' *put the desired url here* ',
+class => ' *choose a class (optional)* ',
+title => ' *choose a title (optional)* ',
+html => ' *choose a button's name* ',
+
+If you use this plugin with [Albinomouse template for Shaari](https://github.com/alexisju/albinomouse-template) you can also add any [Glyphicons Halflinks](http://glyphicons.com/) into the html element (see example into `am_menu.php`). CSS and fonts are loaded with the template.
+

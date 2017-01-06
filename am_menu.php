@@ -8,7 +8,71 @@
 
 function hook_am_menu_render_header($data)
 {
-    $data['buttons_toolbar'][] = file_get_contents(PluginManager::$PLUGINS_PATH . '/am_menu/am_menu.html');
+  
+// Theses following buttons are always displayed
+    $button = array(
+        'attr' => array(
+            'href' => '?',
+            'class' => 'am-menu-item',
+            'title' => 'home',
+        ),
+        'html' => '<i class="glyphicon glyphicon-home"></i> home',
+    );
+    $data['buttons_toolbar'][] = $button;
+        $button = array(
+        'attr' => array(
+            'href' => '?do=daily',
+            'class' => 'am-menu-item',
+            'title' => 'daily',
+        ),
+        'html' => '<i class="glyphicon glyphicon-calendar"></i> daily',
+    );
+    $data['buttons_toolbar'][] = $button;
+        $button = array(
+        'attr' => array(
+            'href' => '?do=tagcloud',
+            'class' => 'am-menu-item',
+            'title' => 'tag cloud',
+        ),
+        'html' => '<i class="glyphicon glyphicon-tags"></i> tag cloud',
+    );
+        $data['buttons_toolbar'][] = $button;
+        $button = array(
+        'attr' => array(
+            'href' => '?do=picwall',
+            'class' => 'am-menu-item',
+            'title' => 'picwall',
+        ),
+        'html' => '<i class="glyphicon glyphicon-film"></i> picwall',
+    );
+
     
+    
+    $data['buttons_toolbar'][] = $button;
+
+
+ // Displayed only if loggedin
+ if ($data['_LOGGEDIN_'] === true) {
+
+    $button = array(
+           'attr' => array (
+            'href' => '?do=tools',
+            'class' => 'am-menu-item',
+            'title' => 'tools',
+        ),
+       'html' => '<i class="glyphicon glyphicon-cog"></i> tools',
+     );
+    $data['buttons_toolbar'][] = $button;
+        $button = array(
+           'attr' => array (
+            'href' => '?do=addlink',
+            'class' => 'am-menu-item',
+            'title' => 'Add link',
+        ),
+       'html' => '<i class="glyphicon glyphicon-plus-sign"></i> add link',
+     );
+    $data['buttons_toolbar'][] = $button;
+    }
+
     return $data;
 }
