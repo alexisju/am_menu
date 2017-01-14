@@ -14,6 +14,7 @@ function hook_am_menu_render_header($data)
         'attr' => array(
             'href' => '?',
             'class' => 'am-menu-item',
+            'id' => 'am-menu-linklist',
             'title' => 'home',
         ),
         'html' => '<i class="glyphicon glyphicon-home"></i> home',
@@ -23,6 +24,7 @@ function hook_am_menu_render_header($data)
         'attr' => array(
             'href' => '?do=daily',
             'class' => 'am-menu-item',
+            'id' => 'am-menu-daily',
             'title' => 'daily',
         ),
         'html' => '<i class="glyphicon glyphicon-calendar"></i> daily',
@@ -32,6 +34,7 @@ function hook_am_menu_render_header($data)
         'attr' => array(
             'href' => '?do=tagcloud',
             'class' => 'am-menu-item',
+            'id' => 'am-menu-tagcloud',
             'title' => 'tag cloud',
         ),
         'html' => '<i class="glyphicon glyphicon-tags"></i> tag cloud',
@@ -41,6 +44,7 @@ function hook_am_menu_render_header($data)
         'attr' => array(
             'href' => '?do=picwall',
             'class' => 'am-menu-item',
+            'id' => 'am-menu-picwall',
             'title' => 'picwall',
         ),
         'html' => '<i class="glyphicon glyphicon-film"></i> picwall',
@@ -59,6 +63,7 @@ function hook_am_menu_render_header($data)
             'href' => '?do=tools',
             'class' => 'am-menu-item',
             'title' => 'tools',
+            'id' => 'am-menu-tools',
         ),
        'html' => '<i class="glyphicon glyphicon-cog"></i> tools',
      );
@@ -67,6 +72,7 @@ function hook_am_menu_render_header($data)
            'attr' => array (
             'href' => '?do=addlink',
             'class' => 'am-menu-item',
+            'id' => 'am-menu-addlink',
             'title' => 'Add link',
         ),
        'html' => '<i class="glyphicon glyphicon-plus-sign"></i> add link',

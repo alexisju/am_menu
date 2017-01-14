@@ -28,8 +28,9 @@ Only change these elements :
 
 href => ' *put the desired url here* ',
 class => ' *choose a class (optional)* ',
+id =>  ' *choose a id (optional)* ',
 title => ' *choose a title (optional)* ',
 html => ' *choose a button's name* ',
 
-If you use this plugin with [Albinomouse template for Shaari](https://github.com/alexisju/albinomouse-template) you can also add any [Glyphicons Halflinks](http://glyphicons.com/) into the html element (see example into `am_menu.php`). CSS and fonts are loaded with the template.
+If you use this plugin with [Albinomouse template for Shaari](https://github.com/alexisju/albinomouse-template) you can also add any  [Glyphicon](http://getbootstrap.com/components/#glyphicons)  into the html element (see example into `am_menu.php`). CSS and fonts are loaded with the template.
 
